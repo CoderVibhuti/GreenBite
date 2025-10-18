@@ -21,8 +21,8 @@ It includes multiple sections like Home, About, Contact, and Sign-up, designed t
 ---
 
 ## 📂 Folder Structure  
+```
 mini project 3/
-│
 ├── index.html
 ├── about.html
 ├── contact.html
@@ -32,6 +32,8 @@ mini project 3/
 ├── contact.css
 ├── sign.css
 └── img/
+```
+
 
 ---
 
