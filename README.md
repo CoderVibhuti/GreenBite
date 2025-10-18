@@ -35,7 +35,7 @@ mini project 3/
 
 ---
 
-##💡 Future Enhancements
+## 💡Future Enhancements
 
 Add interactivity using JavaScript
 Create a responsive navigation bar
@@ -43,5 +43,5 @@ Connect to a backend for form submissions
 
 ---
 
-##❤️ Credits
+## ❤️ Credits
 Created as part of a web development mini-project to practice HTML and CSS skills.
