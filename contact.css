@@ -1,0 +1,96 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Light background color */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for contact form */
+.contact-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style */
+.contact-heading {
+  text-align: center;
+  color: #2d6a4f; /* Gym-themed green color */
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2d6a4f;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #2d6a4f; /* Gym green border */
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #34a853; /* Lighter green on focus */
+  box-shadow: 0 0 5px rgba(52, 168, 83, 0.5); /* Green glow */
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Form row (for state and city) */
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+/* Submit button */
+button {
+  background-color: #34a853; /* Bright green */
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2d6a4f; /* Darker green on hover */
+}
+
+button:focus {
+  box-shadow: 0 0 5px rgba(52, 168, 83, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+}

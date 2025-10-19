@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" class="css" />
+    <title>GREENBITE</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary custom-navbar"
+      class="navbar bg-dark border-bottom border-body"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Green Bite</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-4 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Diet</a></li>
+                <li><a class="dropdown-item" href="#">Personal Trainer</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Fitness Assessments</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" 
+                >Contact Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="sign.html"
+                
+                >SignUp/Login</a
+              >
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner" class="custom-carousel">
+        <div class="carousel-item active">
+          <img
+            src="https://t4.ftcdn.net/jpg/09/65/96/07/240_F_965960796_8cbGcjBdhqW2GQFySJOhYGbbMSiZrprO.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h4>"Healthy Diet"</h4>
+            <p>"A healthy outside starts from the inside."</p>
+          </div>
+        </div>
+        <div class="carousel-item" class="custom-carousel">
+          <img src="/Users/uditdev/Downloads/mini project 2/img/trainer.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h4>"Experienced Trainers"</h4>
+            <p>
+              "A great gym trainer doesn’t just show you the right exercises;
+              they inspire you to push beyond your limits."
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" class="custom-carousel">
+          <img src="https://www.thefinancialworld.com/wp-content/uploads/2022/10/14-A-green-movement-to-protect-the-planet.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h4>"Join the Movement"</h4>
+            <p>
+              Small changes in how we eat can lead to big changes for the planet
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container my-4">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis"
+                ></strong
+              >
+              <h3 class="mb-0">User Research
+              </h3>
+              <!-- <div class="mb-1 text-body-secondary">Nov 12</div> -->
+              <p class="card-text mb-auto">
+                Conduct comprehensive user research to understand needs, preferences, and barriers to sustainable food choices.
+
+              </p>
+              <!-- <a
+                href="#"
+                class="icon-link gap-1 icon-link-hover stretched-link"
+              >
+                Continue reading
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a> -->
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <div
+                style="
+                  width: 200px;
+                  height: 250px;
+                  background-image: url('/Users/uditdev/Downloads/mini project 2/img/1-5-1024x576.png');
+                  background-size: cover;
+                "
+                role="img"
+                aria-label="Thumbnail"
+              ></div>
+              <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <!-- <strong class="d-inline-block mb-2 text-success-emphasis"
+                >Design</strong -->
+              
+              <h3 class="mb-0">Gamification</h3>
+              <!-- <div class="mb-1 text-body-secondary">Nov 11</div> -->
+              <p class="mb-auto">
+                Incorporate gamification elements such as points, badges, and challenges to motivate user engagement and behavior change.
+              </p>
+              <!-- <a
+                href="#"
+                class="icon-link gap-1 icon-link-hover stretched-link"
+              >
+                Continue reading
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a> -->
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <div
+                style="
+                  width: 200px;
+                  height: 250px;
+                  background-image: url('/Users/uditdev/Downloads/mini project 2/img/gam.jpg');
+                  background-size: cover;
+                "
+                role="img"
+                aria-label="Thumbnail"
+              ></div>
+
+              <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <!-- <strong class="d-inline-block mb-2 text-primary-emphasis"
+                >World</strong -->
+              
+              <h3 class="mb-0">AI-Powered Recommendations</h3>
+              <!-- <div class="mb-1 text-body-secondary">Nov 12</div> -->
+              <p class="card-text mb-auto">
+                Develop an AI-powered recommendation engine to generate personalized diet plans based on user data and sustainability criteria
+              </p>
+              <!-- <a
+                href="#"
+                class="icon-link gap-1 icon-link-hover stretched-link"
+              >
+                Continue reading
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a> -->
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <div
+                style="
+                  width: 200px;
+                  height: 250px;
+                  background-image: url('/Users/uditdev/Downloads/mini project 2img/ai.jpeg');
+                  background-size: cover;
+                "
+                role="img"
+                aria-label="Thumbnail"
+              ></div>
+              <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <!-- <strong class="d-inline-block mb-2 text-success-emphasis"
+                >Design</strong -->
+              
+              <h3 class="mb-0">Community Building​</h3>
+              <!-- <div class="mb-1 text-body-secondary">Nov 11</div> -->
+              <p class="mb-auto">
+                Foster a sense of community through online forums, social media groups, and events to encourage peer support and knowledge sharing
+              </p>
+              <!-- <a
+                href="#"
+                class="icon-link gap-1 icon-link-hover stretched-link"
+              >
+                Continue reading
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a> -->
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <div
+                style="
+                  width: 200px;
+                  height: 250px;
+                  background-image: url('/Users/uditdev/Downloads/mini project 2/img/com_bulid.jpeg');
+                  background-size: cover;
+                "
+                role="img"
+                aria-label="Thumbnail"
+              ></div>
+
+              <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container marketing">
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider" />
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h1 class="featurette-heading fw-normal lh-1">
+            Why Green Bite?
+          </h1>
+          <br>
+          <p class="lead">
+           <h5>🌿 Sustainability at Heart</h5>
+            We focus on eco-friendly meal options that prioritize plant-based ingredients, seasonal produce, and minimal food waste.<br>
+            <br>
+            <h5>🥗 Personalized Nutrition</h5>
+            Whether you're new to sustainable eating or a seasoned green eater, we craft diet plans tailored to your lifestyle, preferences, and goals.<br>
+            <br>
+            <h5>🌍 Planet-Friendly Choices</h5>
+            Every Green Bite meal plan is designed to lower your carbon footprint, conserve resources, and support local producers.<br>
+            <br>
+            <h5>💡 Healthy Choices, Happy Planet</h5>
+            Green Bite offers meals that fuel your body with the nutrients you need while making choices that are kind to the earth.<br>
+            <br>
+            
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img
+            src="/Users/uditdev/Downloads/mini project 2/img/green bite.jpeg"
+            alt="500x500"
+            width="500"
+            height="500"
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          />
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">
+            Best Diets for Sustainability
+          </h2>
+          <p class="lead">
+          <h5>Multiple Approaches to Sustainability</h5>
+          There isn’t one single way to eat sustainably. Different approaches focus on reducing carbon footprints, supporting biodiversity, and contributing to the global economy.<br>
+          <br>
+          <h5>Sustainability Doesn’t Mean Strict Veganism</h5>
+          <ul>
+           <li>You don’t have to follow a strictly vegetarian or vegan diet to eat sustainably.</li>
+           <li>A “conscious carnivore” approach allows you to include meat, dairy, and fish responsibly.</li>
+           <li>The focus is on choosing animal and plant foods that use fewer resources and generate lower greenhouse gas emissions</li>
+          </ul>
+          <br>
+          <h5>Key Differences Between Vegan and Sustainable Diets</h5>
+          <ul>
+           <li>Sustainable diets consider not just greenhouse gas emissions but also biodiversity and the nutritional value of foods.</li>
+           <li>While vegan/plant-based diets reduce emissions, they can be harder to maintain for many people and may pose a greater risk of nutrient deficiencies.</li>
+           <li>Sustainable eating aims for a balanced approach that is practical and nutritionally adequate for more people</li>
+          </ul>
+          <h5>The Goal of Sustainable Eating</h5>
+          <ul>
+            <li>Make mindful food choices that support personal health and the planet’s well-being.</li>
+            <li>Prioritize resource-efficient and environmentally friendly food options.</li>
+          </ul>
+
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img
+            src="/Users/uditdev/Downloads/mini project 2/img/ggbite.jpeg"
+            alt="500x500"
+            width="500"
+            height="500"
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          />
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <!-- /END THE FEATURETTES -->
+    </div>
+
+    <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+      <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <a
+              class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"
+              href="/"
+              aria-label="Bootstrap"
+            >
+            <!-- <img src="/img/grenbiite.jpg" alt="SVG Image" width="10" height="10" class="d-block me-2" /> -->
+
+                <title>Bootstrap</title>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <span class="fs-5">GREENBITE</span>
+            </a>
+          </div>
+          <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="/">Home</a></li>
+              <li class="mb-2"><a href="#about.html">About</a></li>
+              <li class="mb-2"><a href="#contact.html">Conatct Us</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>Guides</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="/docs/5.3/getting-started/">Getting started</a>
+              </li>
+              <!-- <li class="mb-2">
+                <a href="/docs/5.3/examples/starter-template/"
+                  >Starter template</a
+                > -->
+              </li>
+              <li class="mb-2">
+                <a href="/docs/5.3/getting-started/webpack/">Veg Diet</a>
+              </li>
+              <li class="mb-2">
+                <a href="/docs/5.3/getting-started/parcel/">Non Veg Diet</a>
+              </li>
+              <li class="mb-2">
+                <a href="/docs/5.3/getting-started/vite/">Gym Diet</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>Projects</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="https://github.com/twbs/bootstrap"
+                  target="_blank"
+                  rel="noopener"
+                  > Product</a
+                >
+              <!-- </li>
+              <li class="mb-2">
+                <a
+                  href="https://github.com/twbs/bootstrap/tree/v4-dev"
+                  target="_blank"
+                  rel="noopener"
+                  >Bootstrap 4</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://github.com/twbs/icons"
+                  target="_blank"
+                  rel="noopener"
+                  >Icons</a
+                >
+              </li> -->
+              <!-- <li class="mb-2">
+                <a
+                  href="https://github.com/twbs/rfs"
+                  target="_blank"
+                  rel="noopener"
+                  >RFS</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://github.com/twbs/examples/"
+                  target="_blank"
+                  rel="noopener"
+                  >Examples repo</a
+                >
+              </li> -->
+            <!-- </ul>
+          </div> -->
+          <!-- <div class="col-6 col-lg-2 mb-3">
+            <h5>Community</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="https://github.com/twbs/bootstrap/issues"
+                  target="_blank"
+                  rel="noopener"
+                  >Issues</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://github.com/twbs/bootstrap/discussions"
+                  target="_blank"
+                  rel="noopener"
+                  >Discussions</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://github.com/sponsors/twbs"
+                  target="_blank"
+                  rel="noopener"
+                  >Corporate sponsors</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://opencollective.com/bootstrap"
+                  target="_blank"
+                  rel="noopener"
+                  >Open Collective</a
+                >
+              </li> -->
+              <!-- <li class="mb-2">
+                <a
+                  href="https://stackoverflow.com/questions/tagged/bootstrap-5"
+                  target="_blank"
+                  rel="noopener"
+                  >Stack Overflow</a
+                > -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
